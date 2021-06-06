@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Clase 11 - Responsive Web design</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link href="https://file.myfontastic.com/mbEPkaFXzb3cL2Dz8d3yCT/icons.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="l-container">
+                <a href="#">
+                    <img src="img/logo.png" alt="" class="logo">
+                </a>
+                <div id="toggle-menu" class="icon-menu"></div>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Inicio</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">El staff</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Servicios</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Promociones</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <img src="img/banner.jpg" alt="" class="banner__img">
+            <div class="banner__copy">
+                <h1 class="banner__copy__title">Tu belleza y estilo en nuestras manos</h1>
+                <p class="banner__copy__content">Profecionales a tu servicio</p>
+                <a href="#" class="banner__copy__button button primary">Conoce más</a>
+            </div>
+        </div>
+        <main>
+            <div class="services">
+                <div class="service">
+                    <h3 class="service__title">Cabello</h3>
+                </div>
+
+                <div class="service">
+                    <h3 class="service__title">Manos y pies</h3>
+                </div>
+
+                <div class="service">
+                    <h3 class="service__title">Cuidado de la piel</h3>
+                </div>
+            </div>
+
+            <div class="staff-container l-container">
+                <h2 class="staff-title">Staff</h2>
+                <div class="staff-member">
+                    <img src="img/staff-1.jpg" alt="" class="staff-member__img">
+                    <h3 class="staff-member__name">Laura</h3>
+                    <a href="#" class="staff-member__button button third">Pedir cita</a>
+                </div>
+                <div class="staff-member">
+                    <img src="img/staff-1.jpg" alt="" class="staff-member__img">
+                    <h3 class="staff-member__name">Carmen</h3>
+                    <a href="#" class="staff-member__button button third">Pedir cita</a>
+                </div>
+                <div class="staff-member">
+                    <img src="img/staff-1.jpg" alt="" class="staff-member__img">
+                    <h3 class="staff-member__name">Mario</h3>
+                    <a href="#" class="staff-member__button button third">Pedir cita</a>
+                </div>
+                <div class="staff-member">
+                    <img src="img/staff-1.jpg" alt="" class="staff-member__img">
+                    <h3 class="staff-member__name">Sandra</h3>
+                    <a href="#" class="staff-member__button button third">Pedir cita</a>
+                </div>
+            </div>
+
+            <div class="contact l-container">
+                <div class="contact-data">
+                    <h2 class="subtitle">Visitanos</h2>
+                    <div class="contact-map">
+                        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJl5d9MxDZhJURrIuNq95DAE4&key=AIzaSyC_eXgLUlgziLO-ivLVKICa69I2xhGydBI"></iframe>
+                    </div>
+                    <div class="contact-address icon-pin">Calle ABC, 123, Int 201 - Mexico</div>
+                    <div class="contact-phone icon-phone">987-654-321</div>
+                </div>
+                <div class="contact-form-container">
+                    <h2 class="subtitle">O escribenos</h2>
+                    <form action="contact.php" method="post" class="contact-form">
+                        <label for="name">Su nombre</label>
+                        <input type="text" id="name" name="nombre">
+                        <label for="email">Su correo</label>
+                        <input type="email" id="email" name="email">
+                        <label for="phone">Su teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="message">Su mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="enviar" class="button secondary">
+                    </form>                
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <a href="http://facebook.com" class="social-icon icon-facebook"></a>
+            <a href="http://twitter.com" class="social-icon icon-twitter"></a>
+            <a href="http://youtube.com" class="social-icon icon-youtube"></a>
+        </footer>
+    </body>
+</html>

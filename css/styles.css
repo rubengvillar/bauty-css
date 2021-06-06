@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Oswald:300,400");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+label, input, textarea {
+  display: block; }
+
+main {
+  padding-bottom: 4em; }
+
+.main-header {
+  background: #514077; }
+  .main-header .l-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.logo {
+  width: 50%; }
+
+.icon-menu {
+  color: #fff;
+  font-size: 1.8em;
+  cursor: pointer; }
+
+.main-nav {
+  background: #FFAD01;
+  position: fixed;
+  top: 0;
+  right: -12em;
+  width: 12em;
+  padding: 1em;
+  height: 100vh;
+  z-index: 200;
+  transition: all .3s; }
+  .main-nav.mostrar {
+    right: 0; }
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .main-menu__item {
+    border-bottom: 1px solid rgba(81, 64, 119, 0.2); }
+  .main-menu__link {
+    line-height: 2.7;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300; }
+
+body {
+  position: relative;
+  right: 0;
+  transition: all .3s; }
+  body.mostrar {
+    right: 12em; }
+
+.banner {
+  position: relative; }
+  .banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#514077, #FFAD01);
+    opacity: .3; }
+  .banner__img {
+    display: block;
+    width: 100%; }
+  .banner__copy {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    color: #fff; }
+    .banner__copy__title, .banner__copy__content {
+      margin: 0; }
+    .banner__copy__title {
+      font-size: 1.4em; }
+      @media screen and (min-width: 1025px) {
+        .banner__copy__title {
+          font-size: 3em; } }
+    @media screen and (min-width: 1025px) {
+      .banner__copy__content {
+        font-size: 1.4em; } }
+    .banner__copy__button {
+      font-size: .8em; }
+      @media screen and (min-width: 1025px) {
+        .banner__copy__button {
+          font-size: 1em; } }
+
+.button {
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 1.2em;
+  margin: 1em .5em 0;
+  color: #fff; }
+  .button.primary {
+    background: #514077; }
+    .button.primary:hover {
+      background: #463766; }
+  .button.secondary {
+    background: #924992; }
+    .button.secondary:hover {
+      background: #814181; }
+  .button.third {
+    background: #FFAD01;
+    color: #514077; }
+    .button.third:hover {
+      background: #e79c00; }
+
+@media screen and (min-width: 768px) {
+  .services {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.service {
+  background: #514077;
+  height: 10em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 768px) {
+    .service {
+      -webkit-flex: 1 1 33.33%;
+          -ms-flex: 1 1 33.33%;
+              flex: 1 1 33.33%; } }
+  @media screen and (min-width: 1025px) {
+    .service {
+      height: 15em; } }
+  .service:nth-of-type(2) {
+    background: #924992; }
+  .service:nth-of-type(3) {
+    background: #FFAD01;
+    color: #514077; }
+  .service__title {
+    margin: 0; }
+
+@media screen and (min-width: 480px) {
+  .staff-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+.staff-title {
+  text-align: center;
+  width: 100%; }
+
+.staff-member {
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #514077; }
+  @media screen and (min-width: 480px) {
+    .staff-member {
+      width: calc(50% - .5em);
+      margin: 0 0 1em; } }
+  @media screen and (min-width: 480px) {
+    .staff-member {
+      width: calc(25% - 1em); } }
+  .staff-member__img {
+    border-radius: 50%;
+    width: 50%;
+    border: 3px solid #924992; }
+  .staff-member__name {
+    margin: 0; }
+  .staff-member__button {
+    font-size: .8em; }
+
+.subtitle {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
+
+.l-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (min-width: 1025px) {
+  .contact {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contact-data, .contact-form-container {
+      width: 49%; } }
+
+.contact-data {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (min-width: 1025px) {
+    .contact-data .contact-map {
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin-bottom: 1em; }
+      .contact-data .contact-map iframe {
+        height: 100%; } }
+  .contact-data .contact-address,
+  .contact-data .contact-phone {
+    opacity: .8;
+    color: #924992;
+    font-size: .85em; }
+    .contact-data .contact-address:before,
+    .contact-data .contact-phone:before {
+      margin-right: .3em;
+      position: relative;
+      top: 2px; }
+  .contact-data .contact-phone {
+    margin-bottom: .8em; }
+
+.contact-form-container input, .contact-form-container textarea {
+  width: 100%;
+  line-height: 1.7;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: .8em; }
+
+.contact-form-container label {
+  font-size: .8em;
+  opacity: .6; }
+
+.contact-form-container [type="submit"] {
+  text-transform: uppercase;
+  line-height: 3;
+  width: auto;
+  cursor: pointer; }
+
+.main-footer {
+  background: #514077;
+  padding: 1.5em 0;
+  text-align: center; }
+
+.social-icon {
+  font-size: 1.4em;
+  display: inline-block;
+  margin: 0 .3em;
+  color: #fff;
+  opacity: .5; }
+  .social-icon:hover {
+    opacity: 1; }
